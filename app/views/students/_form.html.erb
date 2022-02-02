@@ -1,0 +1,13 @@
+<p>
+  <%= label :name, "Name" %>
+  <%= text_field :Name, @student.name, value: @student.name %>
+</p>
+<p>
+  <%= label :Hometown, 'Hometown' %>
+  <%= text_field :Hometown, @student.hometown, value: @student.hometown %>
+</p>
+<p>
+  <%= label :Birthday, 'Birthday' %>
+  <%= date_field :Birthday, @student.birthday, value: @student.birthday  %>
+</p>
+  <%= submit_tag @student.name ?   "Update Student" : "Create Student" %>
